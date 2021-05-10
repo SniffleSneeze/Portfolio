@@ -1,0 +1,49 @@
+* {
+	box-sizing:border-box;
+}
+
+.body {
+	font-family: Arial, sans-serif.
+	
+}
+
+.container {
+	display:flex;
+	justify-content:space-between;
+	width:80%;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+
+.link {
+	display:flex;
+	justify-content:flex-end;
+}
+.navbar {
+	margin-top: 20px;
+}
+.navbar h1 {
+	border-left:3px solid black;
+	text-align: right;
+	width: 5rem;
+	margin-right:20px;
+	
+}
+
+.navbar div a {
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-right:10px;
+	padding-top:10px;
+	border-top:1px solid black;
+	width: 6rem;
+	height: 2rem;
+	font-size:1rem;
+	text-align:center;
+	text-decoration:none;
+}
+
+.navbar div a:hover {
+	border-top:4px solid black;
+}
