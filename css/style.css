@@ -2,9 +2,45 @@
 	box-sizing:border-box;
 }
 
-.body {
-	font-family: Arial, sans-serif.
-	
+
+#index-body-image {
+	background-image:url("../images-logo/forward.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	height:33rem;
+
+}
+
+#portfolio-body-image {
+	background-image:url("../images-logo/left.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	height:33rem;
+
+}
+
+#aboutme-body-image {
+	background-image:url("../images-logo/right.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	height:33rem;
+
+}
+
+#contact-body-image {
+	background-image:url("../images-logo/top.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	height:33rem;
+
+}
+
+.current {
+	border-top:2px solid black;
 }
 
 .container {
@@ -13,7 +49,6 @@
 	width:80%;
 	margin-left: auto;
 	margin-right:auto;
-
 }
 
 .link {
@@ -22,21 +57,21 @@
 }
 .navbar {
 	margin-top: 20px;
+	background-color:yellow;
 }
 .navbar h1 {
 	border-left:3px solid black;
 	text-align: right;
 	width: 5rem;
 	margin-right:20px;
-	
 }
 
-.navbar div a {
+.navlink {
+	display:inline-block;
 	margin-top:auto;
 	margin-bottom:auto;
 	margin-right:10px;
-	padding-top:10px;
-	border-top:1px solid black;
+	padding-top:5px;
 	width: 6rem;
 	height: 2rem;
 	font-size:1rem;
@@ -44,15 +79,36 @@
 	text-decoration:none;
 }
 
-.navbar div a:hover {
-	border-top:4px solid black;
+.navlink:active{
+	border-top:2px solid black;
+}
+.navlink::after {
+	content:'';
+	display:block;
+	width:0;
+	height:2px;
+	background-color:black;
+	transition: width .4s
+}
+
+.navlink:hover::after {
+	width:100%;
+	transition: width .4s;
+}
+
+footer {
+	border-top:2px solid black;
+	background-color:yellow;
+	
 }
 
 footer div p {
-	font-size:0.8rem;
+	font-size:0.7rem;
 }
 
 .logo {
-	width:38px;
-	height:33px;
+	padding-left:auto;
+	width:30px;
+	height:25px;
 }
+
