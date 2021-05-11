@@ -1,9 +1,25 @@
 * {
 	box-sizing:border-box;
+	font-family:arcadeclassic;
+	color:white;
+	cursor:url("../images-logo/cursor-spaceship-medium.png"),auto;
 }
 
+@font-face {
+  font-family: arcadeclassic;
+  src: url("../arcadeclassic/arcadeclassic.ttf");
+}
 
-#index-body-image {
+body {
+	
+	background-image:url("../images-logo/planet2.png");
+	background-size: 2200px 1122px;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	
+}
+
+/*#index-body-image {
 	background-image:url("../images-logo/forward.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -37,10 +53,11 @@
 	background-blend-mode: multiply;
 	height:33rem;
 
-}
+}*/
 
 .current {
-	border-top:2px solid black;
+	border-top:2px solid white;
+	border-bottom:2px solid white;
 }
 
 .container {
@@ -55,14 +72,18 @@
 	display:flex;
 	justify-content:flex-end;
 }
+
+/*------------------Navbar start here------------------*/
+
 .navbar {
 	margin-top: 20px;
-	background-color:yellow;
+	background-color:none;
 }
 .navbar h1 {
-	border-left:3px solid black;
+	border-left:3px solid white;
 	text-align: right;
 	width: 5rem;
+	padding:10px;
 	margin-right:20px;
 }
 
@@ -77,38 +98,102 @@
 	font-size:1rem;
 	text-align:center;
 	text-decoration:none;
+	
 }
 
-.navlink:active{
-	border-top:2px solid black;
+a:active{
+	border-top:2px solid white;
 }
-.navlink::after {
+
+a::after {
 	content:'';
 	display:block;
 	width:0;
 	height:2px;
-	background-color:black;
+	background-color:white;
 	transition: width .4s
 }
 
-.navlink:hover::after {
+a:hover::after {
 	width:100%;
 	transition: width .4s;
 }
+/*------------------Body Main start here------------------*/
+main {
+	position:relative;
+}
 
+.content-box {
+	width:29rem;
+	height:32.3rem;
+	margin:auto auto;
+	padding-top:10px;
+    text-align: center;
+    text-justify: inter-word;
+	letter-spacing:0.11rem;
+	font-size:1.4rem;
+}
+
+.astronaute {
+	position:absolute;
+	top:35.5rem;
+	left:30rem;
+}
+
+#contact-box-title {
+	font-size:3rem;
+	width:27rem;
+	margin:auto auto;
+    text-align: center;
+    text-justify: inter-word;
+	border-bottom:2px dotted white;
+}
+
+#aboutme-body-image {
+	height:45rem;
+}
+
+.aboutme {
+	padding:0 0;
+	border-image: url("../images-logo/border.png") 50% stretch;
+	border: 2px solid ;
+	
+}
+
+.aboutme {
+	overflow: auto;
+	height:5rem;
+}
+
+.aboutme-div {
+	position: relative;
+	
+}
+
+.aboutme:hover {
+	animation: dropdown 1.3s ease-in forwards;
+}
+
+/*------------------footer start here---------------------*/
 footer {
-	border-top:2px solid black;
-	background-color:yellow;
+	margin-top:15px;
+	border-top:2px solid white;
+	background-color:none;
 	
 }
 
 footer div p {
-	font-size:0.7rem;
+	font-size:0.8rem;
 }
 
 .logo {
 	padding-left:auto;
-	width:30px;
-	height:25px;
+	width:48px;
+	height:46px;
 }
 
+@keyframes dropdown {
+	100% {
+		height:30rem;
+	}
+}
