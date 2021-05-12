@@ -19,42 +19,6 @@ body {
 	
 }
 
-/*#index-body-image {
-	background-image:url("../images-logo/forward.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-	height:33rem;
-
-}
-
-#portfolio-body-image {
-	background-image:url("../images-logo/left.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-	height:33rem;
-
-}
-
-#aboutme-body-image {
-	background-image:url("../images-logo/right.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-	height:33rem;
-
-}
-
-#contact-body-image {
-	background-image:url("../images-logo/top.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-	height:33rem;
-
-}*/
-
 .current {
 	border-top:2px solid white;
 	border-bottom:2px solid white;
