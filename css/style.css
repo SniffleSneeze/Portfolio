@@ -1,0 +1,281 @@
+* {
+	box-sizing:border-box;
+	font-family:arcadeclassic;
+	color:white;
+	cursor:url("../images-logo/cursor-spaceship-medium.png"),auto;
+}
+
+@font-face {
+  font-family: arcadeclassic;
+  src: url("../arcadeclassic/arcadeclassic.ttf");
+}
+
+body {
+	
+	background-image:url("../images-logo/planet2.png");
+	background-size: 2200px 1122px;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	
+}
+
+.current {
+	border-top:2px solid white;
+	border-bottom:2px solid white;
+}
+
+.container {
+	display:flex;
+	justify-content:space-between;
+	width:80%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.link {
+	display:flex;
+	justify-content:flex-end;
+}
+
+/*------------------Navbar start here------------------*/
+
+.navbar {
+	margin-top: 20px;
+	background-color:none;
+}
+.navbar h1 {
+	border-left:3px solid white;
+	text-align: right;
+	width: 5rem;
+	padding:10px;
+	margin-right:20px;
+}
+
+.navlink {
+	display:inline-block;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-right:10px;
+	padding-top:5px;
+	width: 6rem;
+	height: 2rem;
+	font-size:1rem;
+	text-align:center;
+	text-decoration:none;
+	
+}
+
+a:active{
+	border-top:2px solid white;
+}
+
+a::after {
+	content:'';
+	display:block;
+	width:0;
+	height:2px;
+	background-color:white;
+	transition: width .4s
+}
+
+a:hover::after {
+	width:100%;
+	transition: width .4s;
+}
+/*------------------Body Main start here------------------*/
+main {
+	position:relative;
+}
+
+.content-box {
+	width:29rem;
+	margin:auto auto;
+	padding-top:10px;
+    text-align: center;
+    text-justify: inter-word;
+	letter-spacing:0.11rem;
+	font-size:1.4rem;
+}
+/*-----------------------HOME / INDEX SECTION---------------------*/
+
+.border {
+	border: 10px solid transparent;
+	border-image: url("../images-logo/border2.png") 10% stretch;	
+}
+
+#index-body-image {
+	height:38rem;
+}
+
+/*-----------------------PORTFOLIO SECTION---------------------*/
+
+.planet-projet {
+	margin-top:50px;
+	padding-left:auto;
+	padding-right:auto;
+	position: relative;
+	height: 100%;
+	width:40%;
+	/*overflow:hidden;*/
+	transition-timing-function: ease-in;
+	transition-duration: 1s;
+	transition-property: width;
+	
+}
+
+.planet-projet h3 {
+	border-bottom:2px solid white;
+	width:108px;
+}
+
+.project-p {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width:70%;
+	text-align:center;
+	position:absolute;
+	top: 0px;
+	left:150px;
+	border-radius: 15px;
+}
+
+.planet-projet img {
+	width:7rem;
+	border:8px solid transparent;
+	border-image: url("../images-logo/border2.png") 10% stretch;
+}
+
+#projet-left {
+	text-align:left;
+	padding-left:5px;
+	position:relative;
+	left:2%;
+}
+
+
+#projet-right {
+	text-align:left;
+	padding-left:5px;
+	position:relative;
+	left:50%;
+}
+
+/*.planet-projet:hover {
+	width:40%;
+	height:30%;
+}*/
+
+/*-----------------------ABOUT ME SECTION---------------------*/
+#aboutme-body-image {
+	height:38rem;
+}
+
+.astronaute {
+	position:absolute;
+	top:75%;
+	left:50%;
+}
+
+.aboutme {
+	padding:0 0;
+	border: 10px solid transparent;
+	border-image: url("../images-logo/border2.png") 10% stretch;
+
+	
+}
+
+.aboutme {
+	overflow: auto;
+	height:70%;
+}
+
+.aboutme-div {
+	position: relative;
+	
+}
+
+/*.aboutme:hover {
+	animation: dropdown 1.3s ease-in forwards;
+}*/
+
+/*-----------------------CONTACT ME SECTION---------------------*/
+
+#contact-box-title {
+	font-size:3rem;
+	width:27rem;
+	margin:auto auto;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+#contact-body-image {
+	height: 34.3rem;
+}
+/*------------------footer start here---------------------*/
+footer {
+	margin-top:15px;
+	border-top:2px solid white;
+	background-color:none;
+	
+}
+
+footer div p {
+	font-size:0.8rem;
+}
+
+.logo {
+	padding-left:auto;
+	width:48px;
+	height:46px;
+}
+
+@keyframes dropdown {
+	100% {
+		height:30rem;
+	}
+}
+
+@media only screen and (max-width: 680px){
+	
+/*------------------------ INDEX / HOME PAGE ----------------------------------*/
+	h1 {
+		display:none;
+	}
+	
+/*------------------------ PORTFOLIO PAGE ----------------------------------*/
+	.planet-projet {
+		width:100%;
+		height:30%;
+	}
+	
+	#projet-left {
+		text-align:left;
+		padding-left:15px;
+		position:relative;
+		left:0%;
+	}
+
+
+	#projet-right {
+		text-align:left;
+		padding-left:15px;
+		position:relative;
+		left:0%;
+	}
+	
+
+/*------------------------ ABOUT ME PAGE ----------------------------------*/
+	
+	
+
+/*------------------------ CONTACT PAGE ----------------------------------*/
+
+
+}
+
+
+/*Extra small <576px (small phones)
+Small ≥576px (phones)
+Medium ≥768px (tablets)
+Large ≥992px (laptops)
+Extra large ≥1200px (desktop monitors)*/
