@@ -146,17 +146,17 @@ main {
 /*-----------------------PORTFOLIO SECTION---------------------*/
 
 .planet-projet {
+	margin-top:50px;
 	padding-left:auto;
 	padding-right:auto;
 	position: relative;
-	height: 195px;
-	width:150px;
-	overflow:hidden;
+	height: 100%;
+	width:40%;
+	/*overflow:hidden;*/
 	transition-timing-function: ease-in;
 	transition-duration: 1s;
 	transition-property: width;
-	border:8px solid transparent;
-	border-image: url("../images-logo/border2.png") 10% stretch;
+	
 }
 
 .planet-projet h3 {
@@ -177,6 +177,8 @@ main {
 
 .planet-projet img {
 	width:7rem;
+	border:8px solid transparent;
+	border-image: url("../images-logo/border2.png") 10% stretch;
 }
 
 #projet-left {
@@ -194,10 +196,10 @@ main {
 	left:50%;
 }
 
-.planet-projet:hover {
+/*.planet-projet:hover {
 	width:40%;
 	height:30%;
-}
+}*/
 
 /*-----------------------ABOUT ME SECTION---------------------*/
 #aboutme-body-image {
@@ -220,7 +222,7 @@ main {
 
 .aboutme {
 	overflow: auto;
-	height:5rem;
+	height:70%;
 }
 
 .aboutme-div {
@@ -228,9 +230,9 @@ main {
 	
 }
 
-.aboutme:hover {
+/*.aboutme:hover {
 	animation: dropdown 1.3s ease-in forwards;
-}
+}*/
 
 /*-----------------------CONTACT ME SECTION---------------------*/
 
@@ -277,7 +279,7 @@ footer div p {
 	}
 	
 /*------------------------ PORTFOLIO PAGE ----------------------------------*/
-	.planet-projet:hover {
+	.planet-projet {
 		width:100%;
 		height:30%;
 	}
