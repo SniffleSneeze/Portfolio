@@ -48,7 +48,7 @@ body {
 
 .navlink {
 	display: inline-block;
-	margin: auto auto;
+	margin: auto;
 	padding-top: 5px;
 	width: 6rem;
 	height: 2rem;
@@ -78,7 +78,6 @@ a:hover::after {
 main {
 	position: relative;
 	height: auto;
-	
 }
 
 .content-box {
@@ -94,8 +93,8 @@ main {
 .border {
 	border: 10px solid transparent;
 	border-image: url("../images-logo/border2.png") 10% stretch;	
-	background-color: #00000090;
-	margin-bottom:20px;
+	background-color: rgba(0, 0, 0, 0.60);
+	margin-bottom: 20px;
 }
 .index-body-image {
 	height: 38rem;
@@ -124,7 +123,7 @@ main {
 	top: 0;
 	left: 150px;
 	border-radius: 15px;
-	background-color: #00000090;
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
 .planet-projet img {
@@ -160,7 +159,7 @@ main {
 	padding: 0 0;
 	border: 10px solid transparent;
 	border-image: url("../images-logo/border2.png") 10% stretch;
-	background-color: #00000090;
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
 .aboutme {
@@ -183,7 +182,7 @@ main {
 .content-box-p {
 	border: 10px solid transparent;
 	border-image: url("../images-logo/border2.png") 10% stretch;
-	background-color: #00000090;
+	background-color: rgba(0, 0, 0, 0.60);
 }
 
 footer {
@@ -211,20 +210,20 @@ footer div p {
 	.planet-projet {
 		width: 100%;
 		height: 30%;
-		margin-bottom: 30%;
+		margin-bottom: 20%;
 	}
 	
 	.projet-left {
 		text-align: left;
 		padding-left: 15px;
 		position: relative;
-		left: 0%;
+		left: 0;
 	}
 
 	.projet-right {
 		text-align: left;
 		padding-left: 15px;
 		position: relative;
-		left: 0%;
+		left: 0;
 	}
 }
