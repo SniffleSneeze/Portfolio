@@ -86,7 +86,7 @@ main {
 	margin: auto auto;
 	padding-top: 10px;
 	text-align: center;
-    text-justify: inter-word;
+	text-justify: inter-word;
 	letter-spacing: 0.11rem;
 	font-size: 1.4rem;
 }
@@ -173,7 +173,7 @@ main {
 	width: 27rem;
 	margin:auto auto;
 	text-align: center;
-    text-justify: inter-word;
+	text-justify: inter-word;
 }
 
 .contact-body-image {
@@ -185,7 +185,7 @@ main {
 	border-image: url("../images-logo/border2.png") 10% stretch;
 	background-color: #00000090;
 }
-/*------------------footer start here---------------------*/
+
 footer {
 	margin-top: 15px;
 	border-top: 2px solid #FFFFFF;
