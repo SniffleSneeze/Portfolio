@@ -98,7 +98,7 @@ main {
 	background-color: #00000090;
 	margin-bottom:20px;
 }
-#index-body-image {
+.index-body-image {
 	height: 38rem;
 }
 /*-----------------------PORTFOLIO SECTION---------------------*/
@@ -148,7 +148,7 @@ main {
 	left: 50%;
 }
 /*-----------------------ABOUT ME SECTION---------------------*/
-#aboutme-body-image {
+.aboutme-body-image {
 	height: 38rem;
 }
 
@@ -170,7 +170,7 @@ main {
 	height: 70%;
 }
 /*-----------------------CONTACT ME SECTION---------------------*/
-#contact-box-title {
+.contact-box-title {
 	font-size: 3rem;
 	width: 27rem;
 	margin:auto auto;
@@ -178,11 +178,11 @@ main {
     text-justify: inter-word;
 }
 
-#contact-body-image {
+.contact-body-image {
 	height: 34.3rem;
 }
 
-#content-box-p {
+.content-box-p {
 	border: 10px solid transparent;
 	border-image: url("../images-logo/border2.png") 10% stretch;
 	background-color: #00000090;
