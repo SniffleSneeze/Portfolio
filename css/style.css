@@ -1,67 +1,55 @@
 * {
 	box-sizing: border-box;
-	font-family: arcadeclassic;
-	color: #FFFFFF;
-	cursor: url("../images-logo/cursor-spaceship-medium.png"),auto;
-}
-
-@font-face {
-	font-family: arcadeclassic;
-	src: url("../arcadeclassic/arcadeclassic.ttf");
+	font-family: 'Nunito', sans-serif;
 }
 
 body {
-	background-image: url("../images-logo/planet2.png");
-	background-size: 2200px 1122px;
-	background-repeat: repeat;
-	background-blend-mode: multiply;
+	background-image: url("../images-logo/bglaptop.png");
+	background-size: cover;
 }
 
-.current {
-	border-top: 2px solid #FFFFFF;
-	border-bottom: 2px solid #FFFFFF;
+span {
+	padding-left: 5px;
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
-	width: 80%;
-	margin: 0 auto;
+.uiButton {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	top: 14px;
 }
 
 .link {
 	display: flex;
 	justify-content: flex-end;
+	width: 75%;
 }
 
-.navbar {
-	margin-top: 20px;
+.current {
+	border-bottom: 2px solid #ffffff;
 }
 
-.navbar h1 {
-	border-left: 3px solid #FFFFFF;
-	text-align: right;
-	width: 5rem;
-	padding: 10px;
-	margin-right: 20px;
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin: 0 auto;
 }
 
 .navlink {
-	display: inline-block;
-	margin: auto;
-	padding-top: 5px;
-	width: 6rem;
-	height: 2rem;
-	font-size: 1rem;
-	text-align: center;
+	color: #03A6B9;
+	width: auto;
+	height: 60px;
+	font-size: 1.2rem;
 	text-decoration: none;
+	margin: 5px 15px;
 }
 
-a:active {
+.navlink:active {
 	border-top: 2px solid #FFFFFF;
 }
 
-a::after {
+.navlink::before {
 	content: '';
 	display: block;
 	width: 0;
@@ -70,39 +58,28 @@ a::after {
 	transition: width .4s
 }
 
-a:hover::after {
+.navlink:hover::before {
 	width: 100%;
 	transition: width .4s;
 }
 
-main {
-	position: relative;
-	height: auto;
+.index-main {
+	margin: 10% 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-.content-box {
-	width: 29rem;
-	margin: auto auto;
-	padding-top: 10px;
-	text-align: center;
-	text-justify: inter-word;
-	letter-spacing: 0.11rem;
+.box-content {
+	justify-self: right;
+	text-align: left;
 	font-size: 1.4rem;
+	background-color: green;
 }
-/*-----------------------HOME / INDEX SECTION---------------------*/
-.border {
-	border: 10px solid transparent;
-	border-image: url("../images-logo/border2.png") 10% stretch;	
-	background-color: rgba(0, 0, 0, 0.60);
-	margin-bottom: 20px;
-}
-.index-body-image {
-	height: 38rem;
-}
+
 /*-----------------------PORTFOLIO SECTION---------------------*/
 .planet-projet {
 	margin-top: 50px;
-	padding: 0 auto;
+	padding: 0;
 	position: relative;
 	height: 100%;
 	width: 40%;
@@ -186,44 +163,11 @@ main {
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
 	margin-top: 15px;
 	border-top: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	width: 100%;
 }
 
-footer div p {
-	font-size: 0.8rem;
-}
-
-.logo { 
-	padding-left: auto;
-	width: 48px;
-	height: 46px;
-}
-
-@media only screen and (max-width: 680px) {
-	
-/*------------------------ INDEX / HOME PAGE ----------------------------------*/
-	h1 {
-		display: none;
-	}
-/*------------------------ PORTFOLIO PAGE ----------------------------------*/
-	.planet-projet {
-		width: 100%;
-		height: 30%;
-		margin-bottom: 20%;
-	}
-	
-	.projet-left {
-		text-align: left;
-		padding-left: 15px;
-		position: relative;
-		left: 0;
-	}
-
-	.projet-right {
-		text-align: left;
-		padding-left: 15px;
-		position: relative;
-		left: 0;
-	}
-}
