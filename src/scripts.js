@@ -14,6 +14,4 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
-setTimeout(()=> {
-    const swup = new Swup();
-},0)
+const swup = new Swup();
