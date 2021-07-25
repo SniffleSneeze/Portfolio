@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang="en">
 	<head>
-		<title>Portfolio ALex F.</title>
+		<title>Portfolio</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,29 +12,30 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+		<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 		<script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 		<script defer type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 		<script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script defer src="src/scripts.js"></script>
 	</head>
-	<body class="body-image">
+	<body>
 	<header>
 		<nav class="container">
 			<div></div>
 			<div class="link">
-				<a href="index.html" class="navlink">
+				<a href="/snifflesneeze.github.io/index.html" class="navlink">
 					<img class="uiButton" src="images-logo/building.png" alt="home"><span>Home</span></a>
-				<a href="portfolio.html" class="navlink current">
+				<a href="/snifflesneeze.github.io/portfolio.html" class="navlink current">
 					<img class="uiButton" src="images-logo/browsers.png" alt="portfolio"><span>Portfolio</span></a>
-				<a href="aboutme.html" class="navlink">
+				<a href="/snifflesneeze.github.io/aboutme.html" class="navlink">
 					<img class="uiButton" src="images-logo/man.png" alt="about me"><span>About me</span></a>
 				<a href="" download="Alexander_Ferreira_CV.pdf" class="navlink">
 					<img class="uiButton" src="images-logo/downloading.png" alt="download cv"><span>Download CV</span></a>
 			</div>
 		</nav>
 	</header>
-		<main>
+		<main class="transition-fade"  id="swup">
 			<section class="slider-container">
 				<!-- Slider main container -->
 				<div class="swiper-container">
@@ -116,7 +117,9 @@
 								</div>
 							</div>
 							<p>
-								some description of the project
+								Building an application exclusively with vanilla PHP, using the SOLID principles and high quality code following the PSR12 standards.
+								We used cURL to fetch data and populate a MySQL database.
+								We then used a Hydrator to populate the UI with that data and HTML & CSS to build the front-end
 							</p>
 						</div>
 						<div class="swiper-slide">
@@ -128,12 +131,12 @@
 							</div>
 							<div class="icons-container">
 								<div class="first-icons">
-									<i class="php">
+									<!--<i class="php">
 										<i class="fab fa-php"></i>
-									</i>
-									<!--<i class="ts">
+									</i>-->
+									<i class="ts">
                                         <p class="iconify ts-logo" data-icon="logos-typescript-icon"
-                                           data-inline="false"></p>-->
+                                           data-inline="false"></p>
 									</i>
 									<i class="html">
 										<ion-icon name="logo-html5"></ion-icon>
@@ -141,9 +144,9 @@
 									<i class="css">
 										<ion-icon name="logo-css3"></ion-icon>
 									</i>
-									<!--<i class="js">
+									<i class="js">
                                         <ion-icon name="logo-javascript"></ion-icon>
-                                    </i>-->
+                                    </i>
 								</div>
 								<div class="second-icons">
 									<i class="code">
@@ -152,7 +155,9 @@
 								</div>
 							</div>
 							<p>
-								some description of the project
+								As a team we had to work with a pre-built RESTful API, we had to work with legacy TypeScript code to test people's aptitude for iO Academy.
+								We used Gulp to compile our SASS and TypeScript and made use of Fetch to interact with the back-end API. Our task as a team was to improve the user UI,
+								which required modifying the underlying data structure and ensuring the existing code still worked with the new structure.
 							</p>
 						</div>
 

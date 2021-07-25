@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper-container', {
     cssMode: true,
     loop: true,
@@ -13,3 +14,5 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-scrollbar',
     },
 });
+
+const swup = new Swup();
