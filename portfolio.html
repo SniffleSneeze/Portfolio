@@ -9,59 +9,286 @@
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
 		<link href="css/normalise.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+		<script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<script defer type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+		<script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer src="src/scripts.js"></script>
 	</head>
 	<body class="body-image">
 	<header>
 		<nav class="container">
 			<div></div>
 			<div class="link">
-				<a href="index.html" class="navlink current">
+				<a href="index.html" class="navlink">
 					<img class="uiButton" src="images-logo/building.png" alt="home"><span>Home</span></a>
-				<a href="portfolio.html" class="navlink">
+				<a href="portfolio.html" class="navlink current">
 					<img class="uiButton" src="images-logo/browsers.png" alt="portfolio"><span>Portfolio</span></a>
 				<a href="aboutme.html" class="navlink">
 					<img class="uiButton" src="images-logo/man.png" alt="about me"><span>About me</span></a>
-				<a href="contact.html" class="navlink">
-					<img class="uiButton" src="images-logo/message.png" alt="contect me"><span>Contact</span></a>
 				<a href="" download="Alexander_Ferreira_CV.pdf" class="navlink">
 					<img class="uiButton" src="images-logo/downloading.png" alt="download cv"><span>Download CV</span></a>
 			</div>
 		</nav>
 	</header>
 		<main>
-			<div class="content-box">
-				<h2>- Portfolio -</h2>
-			</div>
-			<div class="planet-projet projet-left">
-				<h3>Project Nam</h3>
-				<img src="./images-logo/Baren.png" alt="Projet 1">
-				<p class="project-p"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...""Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-			</div>
-			
-			<div class="planet-projet projet-right">
-				<h3>Project Nam</h3>
-				<img src="./images-logo/Lava.png" alt="Projet 1">
-				<p class="project-p"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-			</div>
-			
-			<div class="planet-projet projet-left">
-				<h3>Project Nam</h3>
-				<img src="./images-logo/Terran.png" alt="Projet 1">
-				<p class="project-p"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...""Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-			</div>
-			
-			<div class="planet-projet projet-right">	
-				<h3>Project Nam</h3>
-				<img src="./images-logo/Ice.png" alt="Projet 1">
-				<p class="project-p"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..." </p>
-			</div>
+			<section class="slider-container">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: Todo List</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/ToDoList.png">
+							</div>
+								<div class="icons-container">
+									<div class="first-icons">
+										<i class="php">
+											<i class="fab fa-php"></i>
+										</i>
+										<!--<i class="ts">
+											<p class="iconify ts-logo" data-icon="logos-typescript-icon"
+											   data-inline="false"></p>-->
+										</i>
+										<i class="html">
+											<ion-icon name="logo-html5"></ion-icon>
+										</i>
+										<i class="css">
+											<ion-icon name="logo-css3"></ion-icon>
+										</i>
+										<!--<i class="js">
+											<ion-icon name="logo-javascript"></ion-icon>
+										</i>-->
+									</div>
+									<div class="second-icons">
+										<i class="preview">
+											<a href="https://2021-alexf.dev.io-academy.uk/ToDo/"><ion-icon name="eye-outline"></ion-icon></a>
+										</i>
+										<i class="code">
+											<a href="https://github.com/SniffleSneeze/ToDo"><ion-icon name="code-slash-outline"></ion-icon></a>
+										</i>
+									</div>
+								</div>
+							<p>
+								some description of the project
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: Koalas Cars</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/KoalasCars.png">
+							</div>
+							<div class="icons-container">
+								<div class="first-icons">
+									<i class="php">
+										<i class="fab fa-php"></i>
+									</i>
+									<!--<i class="ts">
+                                        <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                           data-inline="false"></p>-->
+									</i>
+									<i class="html">
+										<ion-icon name="logo-html5"></ion-icon>
+									</i>
+									<i class="css">
+										<ion-icon name="logo-css3"></ion-icon>
+									</i>
+									<!--<i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>-->
+								</div>
+								<div class="second-icons">
+									<i class="preview">
+										<a href="https://dev.io-academy.uk/projects/2021-may/2021-may-koalaCars/"><ion-icon name="eye-outline"></ion-icon></a>
+									</i>
+									<i class="code">
+										<a href="https://github.com/iO-Academy/2021-may-koalaCars"><ion-icon name="code-slash-outline"></ion-icon></a>
+									</i>
+								</div>
+							</div>
+							<p>
+								some description of the project
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: iO Aptitude Test</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/iOAcademy-Aptitud-Test.png">
+							</div>
+							<div class="icons-container">
+								<div class="first-icons">
+									<i class="php">
+										<i class="fab fa-php"></i>
+									</i>
+									<!--<i class="ts">
+                                        <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                           data-inline="false"></p>-->
+									</i>
+									<i class="html">
+										<ion-icon name="logo-html5"></ion-icon>
+									</i>
+									<i class="css">
+										<ion-icon name="logo-css3"></ion-icon>
+									</i>
+									<!--<i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>-->
+								</div>
+								<div class="second-icons">
+									<i class="code">
+										<a href="https://github.com/iO-Academy/aptitude-test"><ion-icon name="code-slash-outline"></ion-icon></a>
+									</i>
+								</div>
+							</div>
+							<p>
+								some description of the project
+							</p>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: Solar System</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/SolarSystem.png">
+							</div>
+							<div class="icons-container">
+								<div class="first-icons">
+									<i class="php">
+										<i class="fab fa-php"></i>
+									</i>
+									<!--<i class="ts">
+                                        <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                           data-inline="false"></p>-->
+									</i>
+									<i class="html">
+										<ion-icon name="logo-html5"></ion-icon>
+									</i>
+									<i class="css">
+										<ion-icon name="logo-css3"></ion-icon>
+									</i>
+									<!--<i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>-->
+								</div>
+								<div class="second-icons">
+									<i class="preview">
+										<a href="https://2021-alexf.dev.io-academy.uk/SolarSystem/"><ion-icon name="eye-outline"></ion-icon></a>
+									</i>
+									<i class="code">
+										<a href="https://github.com/SniffleSneeze/SolarSystem"><ion-icon name="code-slash-outline"></ion-icon></a>
+									</i>
+								</div>
+							</div>
+							<p>
+								some description of the project
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: Collection App</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/CollectionApp.png">
+							</div>
+						<div class="icons-container">
+							<div class="first-icons">
+								<i class="php">
+									<i class="fab fa-php"></i>
+								</i>
+								<!--<i class="ts">
+                                    <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                       data-inline="false"></p>-->
+								</i>
+								<i class="html">
+									<ion-icon name="logo-html5"></ion-icon>
+								</i>
+								<i class="css">
+									<ion-icon name="logo-css3"></ion-icon>
+								</i>
+								<!--<i class="js">
+                                    <ion-icon name="logo-javascript"></ion-icon>
+                                </i>-->
+							</div>
+							<div class="second-icons">
+								<i class="preview">
+									<a href="https://2021-alexf.dev.io-academy.uk/Collection_App/"><ion-icon name="eye-outline"></ion-icon></a>
+								</i>
+								<i class="code">
+									<a href="https://github.com/SniffleSneeze/Collection_App"><ion-icon name="code-slash-outline"></ion-icon></a>
+								</i>
+							</div>
+						</div>
+						<p>
+							some description of the project
+						</p>
+					</div>
+						<div class="swiper-slide">
+							<div class="project-title">
+								<h2>Project Name: Memory Game</h2>
+							</div>
+							<div class="image-container">
+								<img src="images-logo/KoalaMemory.png">
+							</div>
+							<div class="icons-container">
+								<div class="first-icons">
+									<i class="php">
+										<i class="fab fa-php"></i>
+									</i>
+									<!--<i class="ts">
+                                        <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                           data-inline="false"></p>-->
+									</i>
+									<i class="html">
+										<ion-icon name="logo-html5"></ion-icon>
+									</i>
+									<i class="css">
+										<ion-icon name="logo-css3"></ion-icon>
+									</i>
+									<!--<i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>-->
+								</div>
+								<div class="second-icons">
+									<i class="preview">
+										<a href="https://dev.io-academy.uk/projects/2021-may/memory-game/"><ion-icon name="eye-outline"></ion-icon></a>
+									</i>
+									<i class="code">
+										<a href="https://github.com/iO-Academy/2021-koalas-memory-pattern-game"><ion-icon name="code-slash-outline"></ion-icon></a>
+									</i>
+								</div>
+							</div>
+							<p>
+								some description of the project
+							</p>
+						</div>
+						...
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev">
+						<i class="fas fa-chevron-left swiper-portfolio-icon"></i>
+					</div>
+					<div class="swiper-button-next">
+						<i class="fas fa-chevron-right swiper-portfolio-icon"></i>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="container">
+		<footer>
 			<div>
 				<p>&copy; 2021 - Alexander Ferreria -</p>
 			</div>
