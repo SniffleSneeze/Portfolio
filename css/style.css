@@ -46,7 +46,7 @@ footer {
 }
 
 .navlink {
-	color: #03A6B9;
+	color: #05FFFE;
 	width: auto;
 	height: 60px;
 	font-size: 1.2rem;
@@ -75,7 +75,7 @@ footer {
 .index-main {
 	margin: 10% 0;
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 39% 61%;
 }
 
 .box-content {
@@ -83,10 +83,18 @@ footer {
 	text-align: left;
 	font-size: 1.4rem;
 	width: 68%;
-	padding: 10px;
+	padding: 15px;
 	margin-right: 5px;
 	color: #FFFFFF;
 	border-left: 2px solid #FFFFFF;
+}
+
+.box-content h1 {
+	color: #05FFFE;
+}
+
+.box-content span {
+	color: #05FFFE;
 }
 
 .contact {
@@ -118,9 +126,10 @@ footer {
 }
 
 .swiper-slide p {
-	color: #03A6B9;
+	color: #004F6E;
 	border-top: 2px solid #5C007D;
 	margin-bottom: 20%;
+	padding: 10px;
 }
 
 .slider-container {
@@ -210,7 +219,23 @@ footer {
 	width: 68%;
 	padding: 10px;
 	margin-right: 5px;
-	color: #03A6B9;
+	color: #00738D;
 }
 
+.transition-fade {
+	opacity: 1;
+	transition: 500ms;
+	transform: translateX(0);
+	transform-origin: right;
+}
+
+html.is-animating .transition-fade {
+	opacity: 1;
+	transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+	opacity: 0;
+	transform: translateX(0);
+}
 
