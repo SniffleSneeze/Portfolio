@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.swiper-container', {
     cssMode: true,
     loop: true,
@@ -15,4 +14,6 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
-const swup = new Swup();
+setTimeout(()=> {
+    const swup = new Swup();
+},0)
