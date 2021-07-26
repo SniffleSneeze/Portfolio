@@ -239,3 +239,62 @@ html.is-leaving .transition-fade {
 	transform: translateX(0);
 }
 
+@media only screen and (min-width: 2560px)  {
+
+	.navlink {
+		width: auto;
+		height: 60px;
+		font-size: 2rem;
+		margin: 15px 15px;
+	}
+
+	.uiButton {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		top: 5px;
+	}
+
+
+	.box-content {
+		font-size: 2.2rem;
+		margin-top: 5%;
+	}
+
+	.avatar {
+		width: 1260px;
+		height: 1000px;
+	}
+
+	.box-content-aboutme {
+		font-size: 2.2rem;
+	}
+
+	.swiper-container {
+		margin: 18% auto;
+		width: 1480px;
+		height: 1200px;
+	}
+
+	.project-title {
+		font-size: 2rem;
+	}
+
+	.swiper-slide p {
+		font-size: 2rem;
+	}
+
+
+	.image-container {
+		width: 1280px;
+		height: 720px;
+	}
+
+	.first-icons {
+		font-size: 3rem;
+	}
+
+	.second-icons {
+		font-size: 3rem;
+	}
+}
