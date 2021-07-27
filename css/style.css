@@ -593,3 +593,165 @@ html.is-leaving .transition-fade {
 	}
 
 }
+
+@media only screen  and (max-width: 541px)  {
+	body {
+		background-size: auto;
+	}
+	.empty {
+		display: none;
+	}
+
+	.link {
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	.navlink  {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		color: #05FFFE;
+		font-size: 0.9rem;
+		margin: 5px 10px;
+	}
+
+	.navlink span {
+		padding: 4px;
+		margin-top: 4px;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+
+	.uiButton {
+		position: relative;
+		width: 25px;
+		height: 25px;
+		top: 8px;
+	}
+
+	.index-main {
+		margin: 0 0;
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.box-content {
+		justify-self: center;
+		padding: 15px;
+		width: 90%;
+		background-color: #5C007D;
+		border: 2px solid #FFFFFF;
+		border-radius: 5px;
+		font-size: 0.9rem;
+	}
+
+	.box-content h1 {
+		color: #05FFFE;
+		font-size: 1.2rem;
+	}
+
+	.box-content span {
+		color: #05FFFE;
+	}
+
+	.contact {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.logo {
+		width: 30px;
+		margin-top: 5px;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0;
+	}
+
+	.aboutme {
+		width: 90%;
+		margin: 1% auto;
+		background-color: #5C007D;
+		border: 2px solid #FFFFFF;
+	}
+
+	.avatar {
+		padding: 5px;
+		width: 240px;
+		height: 180px;
+	}
+
+	.box-content-aboutme {
+		justify-self: center;
+		text-align: left;
+		font-size: 1rem;
+		width: 100%;
+		padding: 5px;
+		margin: 0;
+		color: #FFFFFF;
+	}
+
+	.box-content-aboutme h1 {
+		color: #05FFFE;
+		font-size: 1.4rem;
+	}
+
+	.swiper-container {
+		width: 100%;
+	}
+
+	.project-title {
+		color: #05FFFE;
+		border-bottom:2px solid #FFFFFF;
+		font-size: 0.9rem;
+		margin: 0;
+	}
+
+	.swiper-slide {
+		padding: 10px;
+	}
+
+	.swiper-slide p {
+		color: #05FFFE;
+		border-top: 2px solid #FFFFFF;
+		width: 100%;
+		margin: 0;
+	}
+
+	.slider-container {
+		background-color: #5C007D;
+		width: 95%;
+		margin: auto auto;
+		border-radius: 30px;
+		border: 2px solid #FFFFFF;
+	}
+
+	.image-container {
+		width: 360px;
+		height: 180px;
+	}
+
+	.icons-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.second-icons a{
+		color: #6b6b6b;
+	}
+
+	.swiper-button-prev::after,
+	.swiper-button-next::after {
+		content: "";
+		display: none
+	}
+	.swiper-portfolio-icon {
+		font-size: 3.5rem;
+		color: #05FFFE;
+		margin-top: -20px;
+	}
+
+}
